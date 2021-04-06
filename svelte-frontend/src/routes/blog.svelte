@@ -15,7 +15,21 @@
     }
 </style>
 
+<script >
+  // TODO: it would be good to get fetch working server side... There were errors when I attempted this earlier. 
+  import { onMount } from 'svelte';
+  import  "../../node_modules/commonmark/dist/commonmark.js"
+  onMount(()=>{ // really want to make this happen server side... 
+    fetch = window.fetch
+    fetch('http://localhost:1337/posts')
+    .then(response => response.json())
+    .then(data => console.log(data));
+    
+  })
+
   
+  
+</script>
   <!-- Custom styles for this template -->
   <link href="https://fonts.googleapis.com/css?family=Playfair&#43;Display:700,900&amp;display=swap" rel="stylesheet">
   <!-- Custom styles for this template -->
