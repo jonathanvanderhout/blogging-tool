@@ -1,0 +1,24 @@
+{
+	"name": "my-app",
+	"version": "0.0.1",
+	"scripts": {
+		"dev": "svelte-kit dev",
+		"build": "svelte-kit build",
+		"start": "svelte-kit start"
+	},
+	"devDependencies": {
+		"@sveltejs/adapter-node": "next",
+		"@sveltejs/kit": "next",
+		"svelte": "^3.29.0",
+		"vite": "^2.1.0"
+	},
+	"type": "module",
+	"dependencies": {
+		"@popperjs/core": "^2.9.2",
+		"bootstrap": "^5.0.0-beta3",
+		"commonmark": "^0.29.3",
+		"feather-icons": "^4.28.0",
+		"jquery": "^3.6.0",
+		"popper.js": "^2.0.0-next.4"
+	}
+}
